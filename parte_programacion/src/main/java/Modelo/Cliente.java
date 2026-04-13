@@ -6,24 +6,21 @@ public class Cliente {
     String apellidos;
     String correo;
     int telefono;
-    boolean socio;
+
 
 
     // Constructores
     public Cliente() {
     }
 
-    public Cliente(String dni, String nombre, String apellidos, String correo, int telefono, boolean socio) {
+    public Cliente(String dni, String nombre, String apellidos, String correo, int telefono) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.correo = correo;
         this.telefono = telefono;
-        this.socio = socio;
     }
-
-    // Getter y setters
-
+// Getter y setters
 
     public String getDni() {
         return dni;
@@ -65,15 +62,9 @@ public class Cliente {
         this.telefono = telefono;
     }
 
-    public boolean isSocio() {
-        return socio;
-    }
-
-    public void setSocio(boolean socio) {
-        this.socio = socio;
-    }
 
     // ToString
+
 
     @Override
     public String toString() {
@@ -83,7 +74,6 @@ public class Cliente {
                 ", apellidos='" + apellidos + '\'' +
                 ", correo='" + correo + '\'' +
                 ", telefono=" + telefono +
-                ", socio=" + socio +
                 '}';
     }
 }
