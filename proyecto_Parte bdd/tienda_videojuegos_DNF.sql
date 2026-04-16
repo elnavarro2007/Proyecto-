@@ -78,7 +78,7 @@ create table proveedor (
 
 create table videojuego (
 
-	numero_serie CHAR(9)  PRIMARY KEY,
+	numero_serie CHAR(9)  PRIMARY KEY UNIQUE,
 	nombre VARCHAR(30) not null UNIQUE,
 	genero VARCHAR(20),
 	id_proveedor int,
